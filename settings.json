@@ -1,0 +1,111 @@
+{
+    "amVim.useSystemClipboard": true,
+    "amVim.smartRelativeLineNumbers": true,
+
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "trailing",
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Monokai",
+    "editor.wordWrap": "on",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.guides.highlightActiveIndentation": false,
+    "editor.guides.indentation": false,
+    "editor.renderLineHighlight": "none",
+    "editor.occurrencesHighlight": false,
+    "editor.guides.highlightActiveBracketPair": false,
+    "editor.foldingHighlight": false,
+    "editor.selectionHighlight": false,
+
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.leader": ",",
+    "vim.insertModeKeyBindings": [{
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+    }],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+          "before": ["<tab>"],
+          "commands": [":bn"]
+        },
+        {
+          "before": ["s-tab"],
+          "commands": [":bp"]
+        },
+        {
+          "before": ["<leader>", "r"],
+          "commands": [":bufdo bd"]
+        },
+        {
+          "before": ["<space>"],
+          "commands": ["workbench.action.files.save"]
+        },
+        {
+          "before": ["<leader>", "<space>"],
+          "commands": [":nohl"]
+        },
+        {
+          "before": ["<leader>", "w"],
+          "commands": ["workbench.action.splitEditor"]
+        },
+        {
+          "before": ["<leader>", "b"],
+          "commands": ["workbench.view.explorer"]
+        },
+        {
+            "before": ["<leader>", "c"],
+            "commands": [
+                "workbench.action.terminal.toggleTerminal",
+            ],
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": [
+                "revealInExplorer",
+            ],
+        },
+        {
+            "before": ["<leader>", "r", "e"],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            "before": ["<leader>", "r", "f"],
+            "commands": [
+                "fileutils.renameFile"
+            ]
+        },
+        {
+            "before": ["<leader>", "o", "g"],
+            "commands": [
+                "workbench.action.showAllSymbols"
+            ]
+        },
+        {
+            "before": ["<leader>", "o", "o"],
+            "commands": [
+                "workbench.action.showEditorsInActiveGroup"
+            ]
+        },
+        {
+            "before": ["<leader>", "o", "p"],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        }
+    ],
+
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<leader>", "c"],
+            "commands": [
+                "editor.action.commentLine",
+                "extension.vim_escape"
+            ],
+        }
+    ],
+}
