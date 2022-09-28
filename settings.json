@@ -7,7 +7,6 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "trailing",
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Monokai",
     "editor.wordWrap": "on",
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
@@ -54,6 +53,10 @@
         {
           "before": ["<leader>", "b"],
           "commands": ["workbench.view.explorer"]
+        },
+        {
+          "before": ["<leader>", "t"],
+          "commands": ["workbench.action.toggleSidebarVisibility"]
         },
         {
             "before": ["<leader>", "c"],
@@ -108,4 +111,7 @@
             ],
         }
     ],
+    "redhat.telemetry.enabled": true,
+    "workbench.colorTheme": "Gruvbox Glass",
+    "explorer.autoReveal": false,
 }

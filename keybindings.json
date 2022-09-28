@@ -1,6 +1,11 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
+        "key": "ctrl+n",
+        "command": "workbench.files.action.createFileFromExplorer",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    {
         "key": "ctrl+h", 
         "command": "workbench.action.focusLeftGroup", 
         "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
@@ -94,5 +99,15 @@
         "key": ", c",
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "!editorTextFocus"
+    },
+    {
+        "key": ", r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "f2",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
 ]
